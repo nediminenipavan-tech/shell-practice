@@ -1,5 +1,12 @@
 #!/bin/bash 
 
-DATE=$(date)
+#DATE=(date)
 
-echo "timestamp executed: $DATE"
+START_TIME=$(date +%S)
+
+sleep 10 &
+
+END_TIME=$(date +%S)
+TOTAL-TIME=$($END_TIME-$START_TIME)
+
+echo "script excuted in: $TOTAL_TIME seconds"
