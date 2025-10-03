@@ -3,7 +3,7 @@
 set -e
 
 error(){
-    echo "there is an error $LINENO, coomand is: "$BASH_COMMAND"
+    echo "there is an error $LINENO, coomand is: $BASH_COMMAND"
 
 }
 
