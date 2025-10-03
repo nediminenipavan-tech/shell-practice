@@ -7,6 +7,8 @@ set -e
 
 # }
 
+trap 'echo "there is an error $LINENO, coomand is: $BASH_COMMAND"' ERR
+
 trap error ERR
 echo "Hello.."
 echo "Before error.."
